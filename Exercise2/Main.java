@@ -17,8 +17,7 @@ public class Main {
         Command turnLeft = new TurnLeftCommand(rover);
         Command turnRight = new TurnRightCommand(rover);
 
-        // Execute command sequence
-        List<Command> commands = Arrays.asList(moveForward, moveForward, turnRight, moveForward, turnLeft, moveForward);
+        List<Command> commands = Arrays.asList(moveForward, moveForward, turnRight, moveForward, moveForward, turnLeft);
         for (Command command : commands) {
             command.execute();
         }

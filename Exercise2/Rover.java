@@ -17,8 +17,9 @@ public class Rover {
         if (grid.isValidPosition(newPos)) {
             this.x = newPos.getX();
             this.y = newPos.getY();
+            System.out.println("Moved to position (" + x + ", " + y + ")");
         } else {
-            System.out.println("Obstacle detected or out of bounds!");
+            System.out.println("Obstacle detected at (" + newPos.getX() + ", " + newPos.getY() + ") or out of bounds!");
         }
     }
 
